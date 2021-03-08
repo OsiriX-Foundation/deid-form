@@ -66,12 +66,14 @@ ClinicalTrialProtocolEthicsCommitteeApprovalNumber (0012,0082)
 
 All tags not addressed by the Basic Profile MUST be retained.
 
+The following UID Attributes must be considered to be part of  
+
 The Retain UIDs Option MUST NOT be used.
 
 ### Notes on De-identification Action Codes (Table E.1-1a)
 
 - *D* - Dummy values MUST be chosen in a manner that ensures they can not be confused with original data.
-- *U* - Internal consistency of ALL UIDs in the de-identified dataset MUST be ensured, including but not limited to SOPInstanceUID, SeriesInstanceUID, and StudyInstanceUID.
+- *U* - Internal consistency of ALL UIDs in the de-identified dataset MUST be ensured, including but not limited to SOPInstanceUID, SeriesInstanceUID, StudyInstanceUID, Instance Creator UID, etc. UIDs beginning with `1.2.840.10008.` MUST NOT be modified.
 - The proper action codes MUST be used for the SOP Instance being de-identified.
 
 ## Form Interpretation
@@ -86,21 +88,24 @@ Only the IODs specified will be de-identified. SOP classes pertaining to other I
 
 The specified attributes MUST be retained.
 
-The De-identification Method Code Sequence `0012,0064` MUST contain the following entry:
+If Retain Request Attributes is specified, the Request Attributes Sequence Attribute `0040,0275` MUST be retained, and the nested attributes corresponding to the selected items MUST be retained or cleaned as described in the PII Cleaning form. All other attributes present in the Request Attributes Sequence Attribute MUST be removed.
 
-- CodeValue `0008,0100` MUST be set to `113105`.
-- Code Meaning Attribute `0008,0104` MUST be set to `Clean Descriptors Option`.
-- Coding Scheme Designator `0008,0102` MUST be set to `DCM`.
-- Mapping Resource `0008,0105` MUST be set to `DCMR`.
-- Context Group Version `0008,0106` MUST be set to `20170914`.
-- Context Identifier `0008,010F` MUST be set to `7050`.
-- Context UID `0008,0117` MUST be set to `1.2.840.10008.6.1.925`.
-- Mapping Resource UID `0008,0118` MUST be set to `1.2.840.10008.2.​16.​4`.
-- Mapping Resource Name `0008,0122` MUST be set to `DCMR`.
+- Requested Procedure Description `0032,1060`.
+  - Requested Procedure Code Sequence `0032,1064`.
+- Scheduled Procedure Step Description `0040,0007`.
+  - Scheduled Protocol Code Sequence `0040,0008`.
+- Reason for the Requested Procedure `0040,1002`.
+  - Reason for Requested Procedure Code Sequence `0040,100A`.
 
-*Some text on how to interpret the PII Cleaning form inlcuding what to add to the De-identification Method Code Sequence*
+### Retain References
+
+If Retain references is specified, Referenced Image Sequence `0008,1140`, Referenced Instance Sequence `0008,114A`, Source Image Sequence `0008,2112`, and Source Instance Sequence `0042,0013` MUST be retained. All UID references MUST be replaced with internally consistent UIDs.
+
+Note that Referenced Image Sequence and Source Image Sequence appear in the Basic Profile. The others would in principle not be removed even if this choice is not selected. No de-identification code is added when this option is specified.
 
 ### Retain Longitudinal Temporal Information
+
+If Retain Times is specified and Retain all times is specified
 
 If Retain Dates is specified, and Randomly Shift dates is not:
 

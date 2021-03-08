@@ -31,18 +31,23 @@ Retain the following attributes.
 
 |                      |                 |   |
 |----------------------|-----------------|---|
-| :black_square_button: Study Description `0008,1030` | :black_square_button: Series Description `0008,103E` | :black_square_button: Other _________________________|
+| :black_square_button: Study Description | :black_square_button: Series Description | :black_square_button:  Derivation Description |
+
+:black_square_button: Retain Request Attributes
+
+- :black_square_button: Requested Procedure Description, :black_square_button: Including Codes
+- :black_square_button: Scheduled Procedure Step Description, :black_square_button: Including Codes
+- :black_square_button: Reason for the Requested Procedure, :black_square_button: Including Codes
 
 :black_square_button: I confirm that there is no PII in the retained description attributes.
 
 :black_square_button: PII in the description attributes is to be removed as specified in the attached PII Cleaning Form.
 
+### Retain References
+
+:black_square_button: Retain references to related objects.
 
 ### Retain Longitudinal Temporal Information
-
-:black_square_button: Retain dates.
-
-- :black_square_button: Randomly shift dates over: ___ / 24 months
 
 :black_square_button: Retain times.
 
@@ -51,13 +56,15 @@ Retain the following attributes.
 - :black_square_button: Retain other times:
   - -_________________________
   - -_________________________
+- :black_square_button: Retain dates.
+  - - :black_square_button: Randomly shift dates over: ___ / 24 months
 
 ### Retain Patient Characteristics
 
 |   |                      |                 |
 |---|------------------|-----------------|
-| :black_square_button: Patient's Age `0010,1010` | :black_square_button: Patient's Sex `0010,0040` | :black_square_button: Patient's Weight `0010,1030` |
-| :black_square_button: Patient's Size (Height) `0010,1020` | :black_square_button: Other _________________________ |
+| :black_square_button: Patient's Age | :black_square_button: Patient's Sex | :black_square_button: Patient's Weight |
+| :black_square_button: Patient's Size (Height) | :black_square_button: Other _________________________ |
 
 ### Retain Device Identity
 
