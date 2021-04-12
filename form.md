@@ -11,9 +11,9 @@ The following image types (IODs) will be present in the set of DICOMs instances 
 |----------|-----------------|---|
 | :black_square_button: MR Image  | :black_square_button: Enhanced MR Image | :black_square_button: CR Image |
 | :black_square_button: CT Image  | :black_square_button: Enhanced CT Image | :black_square_button: VL Microscopic Image |
-| :black_square_button: 12-lead ECG Waveform | :black_square_button: General ECG Waveform |   |
+| :black_square_button: 12-lead ECG Waveform | :black_square_button: General ECG Waveform | :black_square_button: VL Whole Slide Microscopy Image |
 | :black_square_button: Ultrasound Image * | :black_square_button: Secondary Capture Image * | :black_square_button: VL Photographic Image * |
-| :black_square_button: VL Whole Slide Microscopy Image | :black_square_button: Other _________________________ | :black_square_button: Other _________________________ |
+| :black_square_button: Other _________________________ | :black_square_button: Other _________________________ | :black_square_button: Other _________________________ |
 
 Note that image types marked with an * often contain burned-in Personally Identifiable Information (PII). If one of these images types will be present, please specify how PII will be handled:
 
