@@ -33,12 +33,6 @@ Retain the following attributes.
 |----------------------|-----------------|---|
 | :black_square_button: Study Description | :black_square_button: Series Description | :black_square_button:  Derivation Description |
 
-:black_square_button: Retain Request Attributes
-
-- :black_square_button: Requested Procedure Description, :black_square_button: Including Codes
-- :black_square_button: Scheduled Procedure Step Description, :black_square_button: Including Codes
-- :black_square_button: Reason for the Requested Procedure, :black_square_button: Including Codes
-
 :black_square_button: I confirm that there is no PII in the retained description attributes.
 
 :black_square_button: PII in the description attributes is to be removed as specified in the attached PII Cleaning Form.
