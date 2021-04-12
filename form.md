@@ -41,9 +41,9 @@ Retain the following attributes.
 
 Most references to external objects are retained but not all. In particular, the following must be specifically retained.
 
-:black_square_button: Referenced Image Sequence.
-
-:black_square_button: Referenced Study Sequence.
+|                      |                 |
+|----------------------|-----------------|
+| :black_square_button: Referenced Image Sequence | :black_square_button: Referenced Study Sequence |
 
 ### Retain Longitudinal Temporal Information
 
