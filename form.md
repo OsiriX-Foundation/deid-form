@@ -29,9 +29,9 @@ By default de-identification is done following an extremely conservative approac
 
 Retain the following attributes.
 
-|                      |                 |   |
-|----------------------|-----------------|---|
-| :black_square_button: Study Description | :black_square_button: Series Description | :black_square_button:  Derivation Description |
+|                      |                 |   |   |
+|----------------------|-----------------|---|---|
+| :black_square_button: Study Description | :black_square_button: Series Description | :black_square_button:  Derivation Description | :black_square_button:  Contrast Bolus Agent |
 
 :black_square_button: I confirm that there is no PII in the retained description attributes.
 
@@ -44,12 +44,6 @@ Retain the following attributes.
 ### Retain Longitudinal Temporal Information
 
 :black_square_button: Retain times.
-
-- :black_square_button: Retain all times.
-- :black_square_button: Retain PET times.
-- :black_square_button: Retain other times:
-  - -_________________________
-  - -_________________________
 - :black_square_button: Retain dates.
   - - :black_square_button: Randomly shift dates over: ___ / 24 months
 
