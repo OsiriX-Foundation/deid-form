@@ -39,7 +39,11 @@ Retain the following attributes.
 
 ### Retain References
 
-:black_square_button: Retain references to related objects.
+Most references to external objects are retained but not all. In particular, the following must be specifically retained.
+
+:black_square_button: Referenced Image Sequence.
+
+:black_square_button: Referenced Study Sequence.
 
 ### Retain Longitudinal Temporal Information
 
@@ -63,7 +67,7 @@ Retain the following attributes.
 :black_square_button: Retain identifiers regarding to the institution that acquired the data.
 ### Retain Other 
 
-:black_square_button: Retain the following attributes:
+:black_square_button: Retain the following additional attributes:
 
 - -_________________________
 - -_________________________
